@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(SaludoActivity.EXTRA_NOMBRE, etNombre.text.toString())
             startActivity(intent)
         } else {
-            Toast.makeText(this, "Es necesario introducir el nombre", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.msj_nombre), Toast.LENGTH_LONG).show()
         }
     }
 

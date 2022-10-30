@@ -18,6 +18,5 @@ class SaludoActivity : AppCompatActivity() {
 
         tvSaludo=findViewById(R.id.tvSaludo)
         val nombre=intent.getStringExtra(EXTRA_NOMBRE)
-        tvSaludo.text="Hola "+nombre+"!!"
-    }
+        tvSaludo.text= String.format(getString(R.string.saludo),nombre)    }
 }
